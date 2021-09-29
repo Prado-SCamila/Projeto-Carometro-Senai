@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Fonte importada Francois One para título e página home!! --não excluir*/
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* não definir fonte padrão  */
+}
+
+:root {
+    --salmao: #EB795D;
+    --verde-acinzentado: #46635E;
+    --cinza-escuro: #8a8686;
+    --verdeMenta: rgb(149, 231, 181);
+    --rosa: #ddabea;
+    --azul: #4f52ff;
+    --roxo: #AD236E;
+}
+
+
+body {
+    background-color: var(--verdeMenta);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+/*Home*/
+.App {
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#header-dtekta {
+    color: var(--roxo);
+    font-family: 'Francois One','sans-serif';
+    margin-top: 10vh;
+    position: absolute;
+}
+
+.home-header, #ponto, #pto1, #pto2, #pto3 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+#ponto {
+    font-size: 50px;
+    color: var(--verdeMenta);
+    animation: infinite;
+    margin-top: 0;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-name: appear;
+    animation-timing-function: ease-in;
+}
+
+@keyframes appear {
+    0% {
+        color: var(--verdeMenta);
+    }
+
+    5%,40% {
+        color: var(--roxo);
+    }
+
+    45%,100% {
+        color: var(--verdeMenta);
+    }
+}
+
+#pto1 {
+    font-size: 40px;
+    margin-left: 8px;
+    color: var(--verdeMenta);
+    animation: infinite;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-name: appear;
+    animation-timing-function: ease-in;
+}
+
+@keyframes appear {
+    0% {
+        color: var(--verdeMenta);
+    }
+
+    5%,40% {
+        color: var(--verdeMenta);
+    }
+
+    45%,100% {
+        color: var(--roxo);
+    }
+}
+
+#pto2 {
+    font-size: 40px;
+    color: var(--verdeMenta);
+    margin-left: 5px;
+    animation: infinite;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-play-state: running;
+    animation-name: appear;
+    animation-timing-function: ease-in;
+}
+
+@keyframes appear {
+    0% {
+        color: var(--verdeMenta);
+    }
+
+    5%,40% {
+        color: var(--roxo);
+    }
+
+    45%,100% {
+        color: var(--verdeMenta);
+    }
+}
+
+#pto3 {
+    font-size: 40px;
+    color: var(--verdeMenta);
+    margin-left: 5px;
+    animation: infinite;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    animation-name: appear;
+    animation-timing-function: ease-in;
+}
+
+@keyframes appear {
+    0% {
+        color: var(--verdeMenta);
+    }
+
+    5%,40% {
+        color: var(--roxo);
+    }
+
+    45%,100% {
+        color: var(--verdeMenta);
+    }
+}
+
+.App img {
+    width: 43vw;
+    height: 68vh;
+    margin-left: 10%;
+    margin-top: 10vh;
+}
+
+.content-body {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.cover {
+    width: 45%;
+    height: 100vh;
+    background-color: var(--roxo);
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.purple-text {
+    color: white;
+    text-align: right;
+    margin-top: 30%;
+    width: 32vw;
+    line-height: 25px;
+    margin-right: 3vw;
+    margin-left: 30px;
+    font-size: 18px;
+    font-family: 'Francois One', 'sans-serif';
+}
+
+.dtekta {
+    color: var(--verdeMenta);
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.712);
+}
+
+.content-button-login {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    background-color: var(--verdeMenta);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 26px;
+    color: var(--roxo);
+    text-shadow: 2px 2px 2px white;
+    text-decoration: unset;
+    margin-left: 50px;
+}
+
+.content-purple-button-login {
+    width: 427px;
+    margin-top: 120px;
+}
+
+.content-button-login:hover {
+    background-color: var(--roxo);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition-timing-function: ease;
+    transition-duration: .3s;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+/*Login*/
+.content-home {
+    /* border: 2px solid var(--roxo); */
+    width: 70vw;
+    height: 70vh;
+    /* background-color: var(--verde-acinzentado); */
+    margin-top: 130px;
+    display: flex;
+}
+
+.sobre {
+    width: 50%;
+    height: 100%;
+    /* background-color: tomato; */
+}
+
+#img-home {
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    color: var(--roxo);
+}
+
+.login {
+    width: 50%;
+    height: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .login h1 {
+        margin-left: 6rem;
+        margin-bottom: 50px;
+        color: #ad236e;
+    }
+
+#form-login {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.input__login {
+    width: 98%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 40px;
+    background: no-repeat;
+    padding-left: 0.5rem;
+}
+
+#btn-login {
+    background-color: #ad236e;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+    #btn-login:hover {
+        background-color: #ad236e80;
+        transition: .7s;
+        cursor: pointer;
+    }
+
+.social {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    /* background: chartreuse; */
+    margin: 0 auto;
+}
+
+    .social img {
+        width: 30px;
+        height: 30px;
+        margin: 1rem;
+    }
+
+#btn-voltar {
+    /* background:#4f52ff; */
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*------------------------------*/
+
+/*Colaborador*/
+#header-colaborador {
+    /* background-color: rgb(0, 162, 255); */
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1.5rem;
+}
+
+.hello {
+    color: var(--roxo);
+    font-size: 24px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.Home-btn {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid var(--roxo);
+    border-radius: 5px;
+    position: relative;
+    color: var(--roxo);
+    font-family: 'Roboto','sans-serif';
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+    .Home-btn:hover {
+        transition-timing-function: ease;
+        transition-duration: .4s;
+        transition-property: all;
+        border-color: transparent;
+        background-color: var(--roxo);
+        color: white;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+.content-colaborador {
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+
+.box-colaborador {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    background-color: #ad236e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+}
+
+.input-bar-colaborador {
+    /* background-color: yellowgreen; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: unset;
+    margin-top: 2rem;
+}
+
+.input-turma-colaborador {
+    /* background-color: red; */
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: .5rem;
+}
+
+    .input-turma-colaborador:focus {
+        border: 2px var(--azul) solid;
+    }
+
+#btn-busca {
+    width: 50px;
+    height: 50px;
+    margin-left: 1rem;
+    cursor: pointer;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+#icon-busca {
+    width: 30px;
+    height: 30px;
+}
+
+.search {
+    width: 40px;
+    position: relative;
+}
+
+::-webkit-input-placeholder {
+    color: #c4c4c4;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.card-area-colaborador {
+    margin-left: 4rem;
+    width: 80%;
+    height: fit-content;
+    /* background-color:yellow;---- para teste c/ algo inserido na div card  */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+.card-colaborador {
+    width: 49%;
+    height: 110px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 5px;
+    background-color: #FFF;
+}
+
+/*---------------------------------*/
+
+/*Administrador*/
+.container-adm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: red; */
+    width: 70vw;
+    gap: 2rem;
+}
+
+#header-administrador {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    align-items: center;
+    padding-right: 4%;
+    margin-bottom: 30px;
+    /* background-color: yellowgreen; */
+    margin-left: 1rem;
+}
+/* Formatação da primeira caixa */
+.new-student {
+    width: 100%;
+    height: 600px;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    margin-right: 50px;
+}
+
+    .new-student h2 {
+        color: #AD236E;
+        font-size: 24px;
+        margin-top: 60px;
+        margin-left: -230px;
+    }
+
+.input-cadastro {
+    width: 487px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+    padding-right: 30px;
+    background-color: white;
+}
+
+.input-turma-administrador {
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: .5rem;
+}
+
+#turma {
+    width: 487px;
+    height: 50px;
+    margin-bottom: 10px;
+    background: none;
+    padding-left: .7rem;
+}
+/* Formatação do botao de upload de foto */
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Escolha uma foto';
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid rgba(190, 190, 190, 0.301);
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+#upload {
+    width: 487px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 40px;
+    margin-left: -32px;
+    margin-top: -1px;
+    padding-left: 40px;
+    padding-top: 8px;
+    padding-right: 30px;
+    background-color: transparent;
+}
+
+span {
+    position: absolute;
+    margin-top: -75px;
+    margin-left: -20px;
+}
+
+.input-foto {
+    margin-top: .9rem;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-adm {
+    height: 50px;
+    width: 49%;
+    border-radius: 5px;
+    border: transparent 1px solid;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+    .btn-adm:first-child {
+        background-color: #AD236E;
+        color: white;
+        margin-right: 2%;
+    }
+
+    .btn-adm:nth-child(2) {
+        border: 3px solid #AD236E;
+        color: #AD236E;
+        background-color: white;
+    }
+
+    .btn-adm:hover {
+        letter-spacing: 3px;
+        transition-duration: .4s;
+        transition-timing-function: ease;
+    }
+
+.box {
+    width: 50%;
+    min-height: 600px;
+    height: auto;
+    background-color: #AD236E;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto';
+}
+
+    .box h2 {
+        margin-bottom: 20px;
+        margin-top: 60px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+form {
+    margin-top: 1rem;
+}
+
+.input-bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: unset;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.input-turma-administrador {
+    width: 467px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-bottom: 40px;
+    /* padding-left:.5rem;  */
+}
+
+option {
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.input-turma-administrador:focus {
+    border: 2px var(--azul) solid;
+}
+
+#turma-turma {
+    width: 90%;
+}
+
+#background-submit {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: white;
+    margin-top: -42px;
+}
+
+    #background-submit:hover {
+        border-radius: 50%;
+        transition-duration: .2s;
+        transition-timing-function: ease-out;
+    }
+
+::-webkit-input-placeholder {
+    color: #c4c4c4;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+/* formatação dos cards */
+.card-area {
+    width: 68%;
+    height: fit-content;
+    /* background-color:yellow;---- para teste c/ algo inserido na div card  */
+    background-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.card {
+    width: 93%;
+    height: 110px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: row; */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+#form-box {
+    width: 80%;
+}
+
+.foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px rgba(0, 0, 0, 0.329) solid;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#info-std {
+    margin-right: 25%;
+}
+
+.btn-card {
+    background-color: transparent;
+    border: none;
+    margin-right: 5px;
+}
+
+    .btn-card:hover {
+        cursor: pointer;
+        border-bottom: dotted 2px var(--roxo);
+    }

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\carometro",
+    "\\carometro\\src",
+    "\\carometro\\src\\assets",
+    "\\carometro\\src\\assets\\css",
+    "\\carometro\\src\\pages",
+    "\\carometro\\src\\pages\\administrador",
+    "\\carometro\\src\\pages\\colaborador",
+    "\\carometro\\src\\pages\\home",
+    "\\carometro\\src\\services"
+  ],
+  "SelectedNode": "\\carometro.api\\carometro.api.sln",
+  "PreviewInSolutionExplorer": false
+}
